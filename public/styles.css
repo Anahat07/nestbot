@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e75f61, #ffe4e1, #f0f8ff); /* Gradient */
+    background-color: #f0f8ff; /* Solid color matching the gradient */
+    background-size: cover; /* Adjusts the size to cover the entire area */
+    background-position: center; /* Centers the image */
+    height: 100vh; /* Full height */
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Fill the entire height of the body */
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    max-width: 800px;
+    margin-top: -100px;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+#chat-box {
+    height: 400px;
+    width: 500px;
+    overflow-y: scroll;
+    border: 1px solid #ec7d7e;
+    padding: 10px;
+    margin-bottom: 35px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+#user-input {
+    width: calc(100% - 90px); /* Adjusted width for button */
+    padding: 10px;
+    border: 1px solid #ec7d7e;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#send-btn {
+    padding: 10px 20px;
+    background-color: #ec7d7e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+    margin-top: 15px;
+}
+
+#send-btn:hover {
+    background-color: #e75f61; /* Darker color on hover */
+}
+
+#back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ec7d7e; /* Same as send button */
+    color: #fff;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+    margin-top: 15px;
+    margin-left: 10px; /* Space between buttons */
+}
+
+#back-btn:hover {
+    background-color: #e75f61; /* Same darker color on hover */
+}
